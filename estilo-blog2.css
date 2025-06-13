@@ -61,7 +61,7 @@ section .conteudo .capa-img img {
 }
 
 section .conteudo .capa-img .tag {
-    background-color: #ff9900;
+    background: linear-gradient(45deg, #00d4ff, #0066cc);
     color: #fff;
     border-radius: 10px;
     padding: 5px 10px;

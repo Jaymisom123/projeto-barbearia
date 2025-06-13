@@ -67,16 +67,18 @@ li::after {
     content: " ";
     width: 0%;
     height: 2px;
-    background-color: rgb(255, 153, 0);
+    background: linear-gradient(90deg, #00d4ff, #00ffff);
     position: absolute;
     bottom: 0;
     left: 0;
     transition: width .3s ease;
     margin-bottom: -5px;
+    box-shadow: 0 0 10px #00d4ff;
 }
 
 li:hover {
-    color: #ff9900;
+    color: #00d4ff;
+    text-shadow: 0 0 10px #00d4ff;
 }
 
 li:hover::after {
@@ -121,27 +123,34 @@ header .menu-mobile img {
 }
 
 .principal .conteudo-texto span {
-    color: #ff9900;
+    color: #00d4ff;
     font-size: 110px;
     font-family: 'Shadows Into Light', sans-serif;
+    text-shadow: 0 0 20px #00d4ff, 0 0 40px #00ffff;
+    animation: glow 2s ease-in-out infinite alternate;
 }
 
 .link-botao .button {
-    background-color: #ff9900;
+    background: linear-gradient(45deg, #00d4ff, #0066cc);
     color: #fff;
     margin-top: 5px;
     padding: 10px 20px;
-    border-radius: 5px;
+    border-radius: 25px;
     cursor: pointer;
-    transition: .8s;
+    transition: all .3s ease;
     font-size: 1.2rem;
     font-weight: 600;
-    border: none;
+    border: 2px solid #00d4ff;
     font-family: 'Roboto', sans-serif;
+    box-shadow: 0 0 15px rgba(0, 212, 255, 0.3);
+    position: relative;
+    overflow: hidden;
 }
 
 .link-botao .button:hover {
-    background-color: #fdbb2c;
+    background: linear-gradient(45deg, #00ffff, #00d4ff);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(0, 212, 255, 0.5);
     color: #000;
 }
 
@@ -153,13 +162,15 @@ header .menu-mobile img {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #ff9900;
+    background: linear-gradient(135deg, #00d4ff, #0066cc);
     color: #fff;
     font-size: 20px;
     padding: 10px 30px;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     letter-spacing: 1.5px;
+    box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);
+    position: relative;
 }
 
 .secao-sobre .barra-titulo .logo-tesoura {
@@ -233,11 +244,12 @@ header .menu-mobile img {
     content: " ";
     width: 150px;
     height: 3px;
-    background-color: #ff9900;
+    background: linear-gradient(90deg, #00d4ff, #00ffff);
     position: absolute;
     bottom: 6px;
     left: 50%;
     transform: translate(-50%);
+    box-shadow: 0 0 15px #00d4ff;
 }
 
 .cards-container {
@@ -295,25 +307,14 @@ header .menu-mobile img {
     height: auto;
 }
 
-.secao-servicos .cards-container .grade-cards .banner {
-    background-image: url('./img/menu_background.jpg');
-    background-size: cover;
-    background-position: 50% 50%;
-}
-
-.secao-servicos .cards-container .grade-cards .banner .servicos {
-    margin: 30px auto 0;
-    font-size: 1.9rem;
-    font-weight: 600;
-}
-
 .secao-servicos .cards-container .grade-cards .card .preco {
     font-size: 1.8rem;
     margin-top: 10px;
 }
 
 .secao-servicos .cards-container .grade-cards .card .preco span {
-    color: #fdbb2c;
+    color: #00d4ff;
+    text-shadow: 0 0 10px #00d4ff;
 }
 
 .secao-servicos .link-botao .button {
@@ -350,7 +351,7 @@ header .menu-mobile img {
 }
 
 .secao-blog .cards-container .grade-cards .card-blog .tag {
-    background-color: #ff9900;
+    background: linear-gradient(45deg, #00d4ff, #0066cc);
     color: #fff;
     border-radius: 10px;
     padding: 5px 10px;
@@ -359,6 +360,7 @@ header .menu-mobile img {
     position: absolute;
     top: 10px;
     left: 10px;
+    box-shadow: 0 0 10px rgba(0, 212, 255, 0.5);
 }
 
 .secao-blog .cards-container .grade-cards .card-blog .blog-info {
@@ -374,25 +376,27 @@ header .menu-mobile img {
 }
 
 .secao-blog .cards-container .grade-cards .card-blog .blog-info a .link-blog {
-    color: #ff9900;
+    color: #00d4ff;
     font-size: 17px;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     cursor: pointer;
     position: relative;
     width: 95px;
+    text-shadow: 0 0 5px #00d4ff;
 }
 
 .secao-blog .cards-container .grade-cards .card-blog .blog-info a .link-blog:after {
     content: " ";
     width: 0%;
     height: 3px;
-    background-color: #ff9900;
+    background: linear-gradient(90deg, #00d4ff, #00ffff);
     position: absolute;
     bottom: 0;
     left: 0;
     transition: width .5s ease-in-out;
     margin-bottom: -5px;
+    box-shadow: 0 0 10px #00d4ff;
 }
 
 .secao-blog .cards-container .grade-cards .card-blog .blog-info a .link-blog:hover::after {
@@ -470,8 +474,16 @@ header .menu-mobile img {
 }
 
 .secao-contatos .botoes-contato .botao-contato i {
-    color: #fff;
-    font-size: 1.4rem;
+    font-size: 3rem;
+    color: #00d4ff;
+    text-shadow: 0 0 15px #00d4ff;
+    transition: all 0.3s ease;
+}
+
+.secao-contatos .botoes-contato .botao-contato i:hover {
+    color: #00ffff;
+    text-shadow: 0 0 20px #00ffff;
+    transform: scale(1.1);
 }
 
 .secao-contatos .botoes-contato .botao-contato span {
@@ -497,11 +509,13 @@ header .menu-mobile img {
 
 .efeito-cursor {
     cursor: pointer;
-    transition: transform .3s ease-in-out;
+    transition: all .3s ease-in-out;
 }
 
 .efeito-cursor:hover {
     transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 212, 255, 0.3);
+    border: 1px solid rgba(0, 212, 255, 0.5);
 }
 
 footer {
@@ -607,15 +621,15 @@ footer .logo-img {
     }
 
     header .botao-abrir-menu i {
-        font-size: 1.2rem;
-        color: aliceblue;
+        font-size: 2rem;
+        color: #00d4ff;
         cursor: pointer;
-        transition: .3s linear;
+        transition: all 0.3s ease;
     }
 
     header .botao-abrir-menu i:hover {
-        color: #ff9900;
-        transform: scale(1.2);
+        color: #00ffff;
+        text-shadow: 0 0 15px #00ffff;
     }
 
     header .menu-mobile {
@@ -655,7 +669,8 @@ footer .logo-img {
     }
 
     header .menu-mobile .mobile-nav ul li:hover {
-        color: #ff9900;
+        color: #00d4ff;
+        text-shadow: 0 0 10px #00d4ff;
     }
 
     header .menu-mobile .mobile-nav ul li::after {
@@ -768,5 +783,15 @@ footer .logo-img {
 @media screen and (max-width: 852px) and (orientation: landscape) {
     header .menu-mobile .mobile-nav ul {
         gap: 10px;
+    }
+}
+
+/* Animação de brilho futurista */
+@keyframes glow {
+    from {
+        text-shadow: 0 0 20px #00d4ff, 0 0 40px #00ffff;
+    }
+    to {
+        text-shadow: 0 0 30px #00d4ff, 0 0 60px #00ffff, 0 0 80px #00d4ff;
     }
 }
