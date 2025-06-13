@@ -42,7 +42,7 @@ header {
 }
 
 header .logo-img {
-    width: 65px;
+    width: 95px;
     height: auto;
     cursor: pointer;
 }
@@ -100,7 +100,7 @@ header .menu-mobile img {
     align-items: center;
     min-height: 100vh;
     position: relative;
-    background-image: url("./img/homem-barbado-bebendo-em-um-bar.jpg");
+    background-image: url("./img/modelo\ IA.avif");
     background-size: cover;
 }
 
@@ -515,7 +515,7 @@ footer {
 }
 
 footer .logo-img {
-    width: 90px;
+    width: 100px;
     height: auto;
 }
 
